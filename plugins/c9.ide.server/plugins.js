@@ -41,6 +41,10 @@ define(function(require, exports, module) {
                 ui: "lib/ui",
                 c9: "lib/c9",
                 frontdoor: "lib/frontdoor",
+                jointjs: "lib/jointjs/dist",
+                jquery: "lib/jointjs/node_modules/jquery/dist/jquery",
+                backbone: "lib/jointjs/node_modules/backbone/backbone",
+                underscore: "lib/jointjs/node_modules/backbone/node_modules/underscore/underscore"
             };
             
             if (whitelist === "*") {
@@ -70,6 +74,7 @@ define(function(require, exports, module) {
                     "ui",
                     "emmet",
                     "frontdoor",
+                    "jointjs",
                     "mocha", // TESTING
                     "chai",  // TESTING
                 ].forEach(function(name) {
