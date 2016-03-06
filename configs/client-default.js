@@ -898,6 +898,9 @@ module.exports = function(options) {
             staticPrefix: staticPrefix + "/plugins/c9.ide.collab/chat"
         });
     }
+    
+    if (options.platform !== "win32")
+        plugins.push("plugins/c9.ide.language.codeintel/codeintel");
 
     return plugins;
 };
